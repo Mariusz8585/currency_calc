@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='style.css')}}/>
+</head>
+<body>
+<form method="post">
+  <div class="container">
+
+    <label for="currency"><b> Wybierz walutę </b></label>
+
+    <select name="currency" id="currency">
+
+      <option value="dolar australijski">dolar australijski</option>
+      <option value="dolar kanadyjski">dolar kanadyjski</option>
+      <option value="euro">euro</option>
+      <option value="korona czeska">korona czeska</option>
+      <option value="korona norweska">korona norweska</option>
+      <option value="dolar amerykanski">dolar amerykanski</option>
+    </select>
+    
+    <br><br>
+
+    <label for="quantity"><b> ilość </b></label>
+    <input type="text" placeholder="Enter quantity" name="quantity" required />
+
+    <button type="submit">Przelicz</button>
+
+  </div>
+</form>
+</body>
+</html>
